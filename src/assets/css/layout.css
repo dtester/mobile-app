@@ -24,7 +24,7 @@
   cursor: pointer;
   transform-origin: 0 0;
   transition: background .3s .3s, transform 0s .6s;
-  will-change: background;
+  will-change: background, transform;
 }
 .layout[data-drawer] .layout__overlay {
   background: rgba(0,0,0,.4);
