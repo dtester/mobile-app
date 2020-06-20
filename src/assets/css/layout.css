@@ -74,10 +74,12 @@
 @media (max-width: 380px) {
   .layout {
     height: auto;
+    min-height: 100vh;
   }
 }
 @media (max-height: 650px) {
   .layout {
     height: auto;
+    min-height: 100vh;
   }
 }

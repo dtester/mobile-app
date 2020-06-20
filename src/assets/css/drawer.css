@@ -115,3 +115,10 @@
 .layout[data-drawer] .drawer--menu .menu__item:nth-child(4) {
   animation: fade .5s 1.2s both, slide-left .5s 1.2s both;
 }
+
+@media (max-width: 380px) {
+  .drawer::before,
+  .drawer::after {
+    display: none;
+  }
+}
