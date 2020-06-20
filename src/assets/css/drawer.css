@@ -31,7 +31,7 @@
   background: rgba(255,255,255,.05);
   transform: scale(3);
   transition: transform .8s ease;
-  will-change: transform;
+  will-change: transform, border-radius;
 }
 .drawer::after {
   top: 0;
@@ -120,5 +120,11 @@
   .drawer::before,
   .drawer::after {
     display: none;
+  }
+
+  .share,
+  .drawer__profile,
+  .drawer--menu .menu__item {
+    animation: none !important;
   }
 }
