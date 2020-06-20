@@ -1,1 +1,0 @@
-Demo https://dtester.github.io/mobile-app
