@@ -121,10 +121,4 @@
   .drawer::after {
     display: none;
   }
-
-  .share,
-  .drawer__profile,
-  .drawer--menu .menu__item {
-    animation: none !important;
-  }
 }
