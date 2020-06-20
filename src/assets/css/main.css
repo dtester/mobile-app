@@ -1,0 +1,58 @@
+@import 'vars.css';
+@import 'layout.css';
+@import 'header.css';
+@import 'drawer.css';
+@import 'menu.css';
+@import 'panel.css';
+@import 'avatar.css';
+@import 'profile.css';
+@import 'friends.css';
+@import 'setting.css';
+@import 'messages.css';
+@import 'keyframes.css';
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ede7f6;
+  font-family: 
+    -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+}
+
+.animation-left-1 {
+  animation: slide-left .4s .2s both, fade .4s .2s both;
+}
+.animation-left-2 {
+  animation: slide-left .4s .4s both, fade .4s .4s both;
+}
+.animation-left-3 {
+  animation: slide-left .4s .6s both, fade .4s .6s both;
+}
+.animation-left-4 {
+  animation: slide-left .4s .8s both, fade .4s .8s both;
+}
+.animation-left-5 {
+  animation: slide-left .4s 1s both, fade .4s 1s both;
+}
+
+.animation-top-1 {
+  animation: slide-top .4s .2s both, fade .4s .2s both;
+}
+.animation-top-2 {
+  animation: slide-top .4s .4s both, fade .4s .4s both;
+}
+.animation-top-3 {
+  animation: slide-top .4s .6s both, fade .4s .6s both;
+}
+.animation-top-4 {
+  animation: slide-top .4s .8s both, fade .4s .8s both;
+}
+.animation-top-5 {
+  animation: slide-top .4s 1s both, fade .4s 1s both;
+}

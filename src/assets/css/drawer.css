@@ -1,0 +1,117 @@
+.drawer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 70%;
+  left: -70%;
+  overflow: hidden;
+  padding-top: 70px;
+  box-sizing: border-box;
+  top: 0;
+  z-index: 10;
+  background: hsl(var(--color-active));
+  transition: transform .5s .3s;
+  will-change: transform;
+}
+.layout[data-drawer] .drawer {
+  transform: translateX(100%);
+}
+.drawer::before,
+.drawer::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 0;
+  top: -10%;
+  left: -30%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  background: rgba(255,255,255,.05);
+  transform: scale(3);
+  transition: transform .8s ease;
+  will-change: transform;
+}
+.drawer::after {
+  top: 0;
+  left: -30%;
+  transform: scale(4);
+}
+.layout[data-drawer] .drawer::before {
+  transform: scale(1);
+  transition-delay: .1s;
+}
+.layout[data-drawer] .drawer::after {
+  transform: scale(2);
+  transition-delay: .4s;
+}
+
+.drawer__profile {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.drawer__avatar {
+  width: 50px;
+}
+.drawer__nickname {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  color: #fff;
+}
+.drawer__name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.drawer__nick {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.drawer .drawer--menu {
+  color: rgba(255,255,255,.7);
+  flex: 1;
+  transition: color .2s;
+}
+.drawer .drawer--menu .menu__item:hover {
+  color: #fff;
+}
+.drawer .drawer--menu .menu__label {
+  padding: 0;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share__item {
+  color: rgba(255,255,255,.5);
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color .2s;
+}
+.share__item:hover {
+  color: #fff;
+}
+
+.layout[data-drawer] .share {
+  animation: fade .5s .6s both, slide-top .5s .6s both;
+}
+.layout[data-drawer] .drawer__profile {
+  animation: fade .5s .6s both;
+}
+.layout[data-drawer] .drawer--menu .menu__item:nth-child(1) {
+  animation: fade .5s .6s both, slide-left .5s .6s both;
+}
+.layout[data-drawer] .drawer--menu .menu__item:nth-child(2) {
+  animation: fade .5s .8s both, slide-left .5s .8s both;
+}
+.layout[data-drawer] .drawer--menu .menu__item:nth-child(3) {
+  animation: fade .5s 1s both, slide-left .5s 1s both;
+}
+.layout[data-drawer] .drawer--menu .menu__item:nth-child(4) {
+  animation: fade .5s 1.2s both, slide-left .5s 1.2s both;
+}

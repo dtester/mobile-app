@@ -1,0 +1,85 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 50px;
+  box-sizing: border-box;
+  user-select: none;
+}
+.header__title {
+  font-size: 20px;
+  line-height: 20px;
+  color: hsl(var(--color-primary));
+  display: block;
+  padding: 0 20px;
+  flex: 1;
+}
+.header:focus-within .header__title {
+  width: 0;
+}
+
+.burger {
+  position: relative;
+  height: 13px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+.burger__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid hsl(var(--color-primary));
+  transition: transform .2s .5s, border-color .5s .3s, top .2s .5s, opacity .2s .5s;
+  will-change: transform, top;
+}
+.burger:hover .burger__line {
+  border-color: hsl(var(--color-active));
+}
+.burger__line:nth-child(1) {
+  top: 0;
+}
+.burger__line:nth-child(2) {
+  width: 66%;
+  top: 50%;
+}
+.burger__line:nth-child(3) {
+  top: 100%;
+}
+.layout[data-drawer] .burger__line {
+  border-color: #fff;
+}
+.layout[data-drawer] .burger__line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.layout[data-drawer] .burger__line:nth-child(2) {
+  opacity: 0;
+}
+.layout[data-drawer] .burger__line:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+.header__btn {
+  position: relative;
+  padding: 0 5px;
+  margin-right: -5px;
+  font-size: 20px;
+  color: hsl(var(--color-primary));
+  cursor: pointer;
+  transition: color .2s;
+}
+.header__btn:hover {
+  color: hsl(var(--color-active));
+}
+.header__point {
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: hsl(var(--color-active));
+}

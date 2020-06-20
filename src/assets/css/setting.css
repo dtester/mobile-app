@@ -1,0 +1,44 @@
+.setting {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  user-select: none;
+}
+.setting__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.setting__label {
+  flex: 1;
+  color: hsl(var(--color-primary));
+}
+.setting__checkbox {
+  position: relative;
+  height: 14px;
+  width: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background: hsla(var(--color-active), .1);
+  transition: background .2s;
+}
+.setting__checkbox--active {
+  background: hsla(var(--color-active), .15);
+}
+.setting__checkbox::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(100% - 14px);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: #fff;
+  transition: left .2s, background .2s;
+}
+.setting__checkbox--active::after {
+  left: 0;
+  background: hsl(var(--color-active));
+}
