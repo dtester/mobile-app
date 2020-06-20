@@ -9,7 +9,7 @@
     <div class="userlist__content">
       <div class="userlist__name">Elisabetta  R.</div>
       <time class="userlist__time">5:45 am</time>
-      <p class="userlist__mess">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="userlist__mess">Lorem, ipsum dolor sit amet.</p>
     </div>
   </article>
 
@@ -23,7 +23,7 @@
     <div class="userlist__content">
       <div class="userlist__name">Donald T.</div>
       <time class="userlist__time">3:44 pm</time>
-      <p class="userlist__mess">Est reprehenderit voluptate fugiat culpa, doloremque.</p>
+      <p class="userlist__mess">Est reprehenderit voluptate.</p>
     </div>
   </article>
 
@@ -37,7 +37,7 @@
     <div class="userlist__content">
       <div class="userlist__name">Miuki S.</div>
       <time class="userlist__time">6:23 am</time>
-      <p class="userlist__mess">Corrupti alias molestiae suscipit voluptatum omnis nesciunt velit.</p>
+      <p class="userlist__mess">Corrupti alias molestiae suscipit.</p>
     </div>
   </article>
 
@@ -51,7 +51,7 @@
     <div class="userlist__content">
       <div class="userlist__name">Katerina A.</div>
       <time class="userlist__time">7:11 am</time>
-      <p class="userlist__mess">Tenetur asperiores nemo repudiandae consectetur quae animi deleniti obcaecati.</p>
+      <p class="userlist__mess">Tenetur asperiores nemo repudiandae.</p>
     </div>
   </article>
 
@@ -65,7 +65,7 @@
     <div class="userlist__content">
       <div class="userlist__name">Vladimir P.</div>
       <time class="userlist__time">11:53 pm</time>
-      <p class="userlist__mess">Autem necessitatibus natus similique consequuntur quidem et velit dignissimos accusantium !</p>
+      <p class="userlist__mess">Autem necessitatibus natus similique!</p>
     </div>
   </article>
 </div>

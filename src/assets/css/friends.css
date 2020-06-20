@@ -35,9 +35,8 @@
 .userlist__mess {
   font-size: 13px;
   color: hsl(var(--color-primary));
-  overflow: hidden;
-  height: 20px;
   margin: 0;
+  width: 100%;
 }
 .userlist__time {
   font-size: 12px;
